@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    /* background: url(/pexels-rodnae-productions-7915313.jpg) no-repeat
+    center center/cover;  */
+    background-color: rgba(15, 248, 7, 0.501);
+}
+#game{
+    height: 720px;
+    width: 400px;
+    border: 2px solid black;
+    margin: 1rem auto;
+    background:url(/map2.png) ;
+    background-size: contain;
+    overflow: hidden;
+    
+}
+#bluecar{
+    height: 100px;
+    width: 130px;
+    /* background-color: black; */
+    position: relative;
+    top: 0px;
+    left: 0px;
+    text-align: center;
+    animation: move 3s linear  infinite  ;
+
+}
+#bluecar img{
+    height: 100px;
+}
+
+@keyframes move {
+    0%{
+        top: 0px;
+    }
+    100%{
+        top: 720px;
+    }
+    
+}
+#racecar{
+    height: 100px;
+    width: 130px;
+    /* background-color: red; */
+    position: relative;
+    top: 400px;
+    left: 130px;
+    text-align: center;
+}
+#racecar img{
+    height: 100px;
+}
+
+#result{
+    height: 200px;
+    width: 600px;
+    background-color: rgb(11, 11, 11);
+    margin:  1rem auto;
+    border-radius: 20px;
+    font-size: 30px;
+    text-align: center;
+    color: rgb(255, 0, 0);
+    display:none ;
+}
+#score{
+    font-size: 2.2rem;
+    color: rgb(150, 255, 3);
+}
+#btn{
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    border: none;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    box-shadow: 2px, 2px, 2px, 2px white;
+    font-size: 25px;
+    margin-top: 10px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
